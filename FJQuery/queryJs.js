@@ -8,3 +8,7 @@ $('h1').addClass("h1style h2-style");
 // alert("hello");
 
 $('h1').removeClass("h2-style");
+
+console.log($('h1').hasClass('h1style'));
+console.log($('img').attr("src"));
+$('a').attr("href","https://google.com").attr("target","_blank");
