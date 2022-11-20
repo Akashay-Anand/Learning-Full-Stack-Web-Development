@@ -1,0 +1,19 @@
+body{
+    background-color: #FFFDE3;
+}
+hr{
+    border-style: dotted none none;
+    border-width: 5px;
+    width: 10%;
+    border-color: #CFE8A9;
+}
+h1, h3{
+    color: #C21010;
+}
+
+/* .logo-img {
+ background-color: black;
+} */
+/* img {
+    background-color: blue;
+} */

@@ -1,0 +1,48 @@
+/* 
+# types of css: 1) Inline ; 2) Internal ; 3) External
+# priority  Inline > Internal > External
+
+# Selectors: Id > class > Tag
+
+# always use alphabetical order 
+# don't use same id for multiple tag. we can use 'class'
+# A tag can contain only one ID but it can contan multiple class.
+
+# Sudo Class: Sub property of a given class
+Ex: img:hover{ }; (* id overrides this property, better t use class or tag)
+
+
+Note: use class inted of id 
+
+*/
+
+/* this body style is not working. becouse we have implemented internal style on body */
+body{
+    background-color: blue;
+}
+
+img {
+    background-color: aquamarine;
+}
+img:hover{
+    background-color: red;
+}
+
+/* #Hello {
+    background-color: blueviolet;
+} */
+/* '.coder1' is not working for 'img' becouse id has more priority */
+.coder1 {
+    color: brown;
+    background-color: blanchedalmond;
+}
+.coder2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#para1{
+    color: brown;
+}
+#para2{
+    font-size: 30px;
+}
