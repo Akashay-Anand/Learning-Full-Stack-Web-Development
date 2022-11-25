@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jeson</title>
+</head>
+<body>
+    <h1 id="demo">Hello JSON </h1>
+
+    <script>
+        let jsonObj = {
+            'name':"Anand",
+            section: "K20wy",
+            roll:[28,24,25,26]
+        }
+        delete jsonObj.roll[1];
+        console.log(jsonObj.name);
+
+        let myjsonstr = JSON.stringify(jsonObj);
+        console.log(myjsonstr);
+        document.getElementById("demo").innerHTML = myjsonstr;
+
+        myjsonstr = myjsonstr.replace('Anand','Kumar');
+        console.log(myjsonstr);
+
+        let newJsonObj = JSON.parse(myjsonstr);
+        console.log(newJsonObj);
+    </script>
+</body>
+</html>
