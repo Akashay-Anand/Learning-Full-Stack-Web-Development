@@ -11,6 +11,7 @@
         .sty{
             color: aqua;
             font-size: 70px;
+            animation: fadeIn 5s;
         }
     </style>
 </head>
@@ -20,10 +21,17 @@
     <button class="btn" onclick="modifyClass()">Click Me</button>
     <h1 id="h1t">Hello 2</h1>
     <ul id="lis">
-        <li class="item"><a href="google.com">Google</a></li>
+        <li class="item"><a href="https://www.google.com">Google</a></li>
         <li class="item">Second</li>
         <li class="item">Third</li>
     </ul>
+
+    
+    <div onclick="alert('parent')">
+        <h1 onclick="alert('child')">childe title</h1>
+    </div>
+
+
     <script src="DOM1.js" charset="utf-8"></script>
 </body>
 </html>

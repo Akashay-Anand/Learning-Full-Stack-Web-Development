@@ -3,12 +3,15 @@
     document.getElementById('h1t').classList.add('hide','sty'); // add 'hide' class to that list
     document.getElementById('h1t').classList.remove('hide'); // this will remove particular method
     document.querySelector('button').attributes;    // this will return array of all attribute use in taht particular element... // note use queryselector and target element
+    var link = document.querySelector("a").getAttribute("href");
     document.querySelector("a").setAttribute("href", "https://www.bing.com");
 }
 
 function modifyClass(){
     document.getElementById('h1t').classList.toggle('sty');
+    // document.getElementById('h1t').style.fadein();
     console.log(document.getElementById('btn').attributes)
+
     
 }
 
