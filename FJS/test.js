@@ -1,21 +1,10 @@
-// chanage keys value
-const keys = "CDBBCBBDBAADDACBADDCCADDBDAACA";
-const len = keys.length;
+// Higher Order function
 
-let i = 0;
+function add(num1, num2){ return num1+num2; }
+function multiply(num1, num2){ return num1*num2; }
 
-const inter = setInterval(
-  () => {
-    document.querySelector(`#${keys[i]}_${i+1}`).click(); // select the correct option
-    document.querySelector("#main_div > div.tableWidthPercent > div.onlineTestLeftDiv > div.qnav > span.saveNextButton > a").click(); // move to next question
-    i++;
-    
-    if(i == len){ // stop the interval when all questions are answered
-      clearInterval(inter)
-      document.querySelector("#activator").click(); // submit the test
-      document.querySelector(`#box > div > div > div > div > input[type=radio]:nth-child(1)`).click(); // select the reason for submit
-      document.querySelector("#close_confirmed").click(); // submit the test
-    }
-  }
-  // 2 seconds(2000 milliseconds) for each question
-,2000);
+function calculator(num1, num2, operator){
+    return operator(num1,num2);
+}
+
+calculator(4,5,add);

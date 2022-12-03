@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Listener</title>
+</head>
+<body>
+    
+    <button> Click me </button>
+
+    <script>
+        // note '()' is not used here while mentioning function name here... if we do mention than it will get trigered immediately without any event
+        document.addEventListener("click",handelEv); 
+        function handelEv(){ alert("someone clicked on page") }
+
+        // we can use anonymous function [ note-1]
+        document.querySelector("button").addEventListener("click", function (){
+            alert("click event");
+        });
+
+    </script>
+</body>
+</html>
+<!-- 
+    [note-1]: Anonymous function are those function which doesn't have function name
+              ex:  function () { alert("function executed"); }
+ -->
