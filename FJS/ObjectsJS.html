@@ -33,10 +33,19 @@
             fullName : function() {
                 return this.firstName + " " + this.lastName;
             }   
+            // In the example above, "this" refers to the person object.
         };
         console.log(person2.fullName());
+    
+    // insted of creating individual object we can create Constructor function which will create object with reference
 
-    // In the example above, this refers to the person object.
+    function BuildObj(firstName,lastName,ide){
+        this.firstName = firstName;
+        this.lastName  = lastName;
+        this.id = ide;
+    }
+
+    var person3 = new BuildObj("Anand","Kumar","101");
 
     </script>
 </body>
