@@ -44,6 +44,7 @@ for(var i = 0; i < document.querySelectorAll(".drum").length ; i++ ){
                 audio.play();
                 break;
             default:
+                console.log(text);
                 break;
         }
 
